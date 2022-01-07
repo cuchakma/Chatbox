@@ -3,8 +3,10 @@
     height: calc(100vh - 68px);
     box-shadow: 0px 22px 30px 0px rgb(28 26 58 / 20%);
     border-radius: 10px;
-    position: relative;
+    position: fixed;
+    right:30px;
     flex-direction: column;
+    width:372px
 }
 .chat-box-header{
     background: linear-gradient(135deg, rgb(42, 39, 218) 0%, rgb(0, 204, 255) 100%);
