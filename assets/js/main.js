@@ -3,9 +3,12 @@ let userName;
 let msg;
 let completeMsg;
 let textbox = document.getElementById('text-box');
+
 document.addEventListener('DOMContentLoaded', function(e){
     userName = prompt('What is your name?');
+    userName = (userName === '') ? 'Anonymous#'+Math.floor(Math.random() * (100000 - 1 + 1)) : userName;
 });
+
 textbox.addEventListener('keypress', function(e){
     if(e.key === 'Enter') {
         textContentScroll = document.getElementsByClassName('chat-box-content')[0];
