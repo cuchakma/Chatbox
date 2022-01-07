@@ -6,7 +6,7 @@
     position: fixed;
     right:30px;
     flex-direction: column;
-    width:372px
+    width:372px;
 }
 .chat-box-header{
     background: linear-gradient(135deg, rgb(42, 39, 218) 0%, rgb(0, 204, 255) 100%);
@@ -53,4 +53,10 @@
     padding:10px 10px;
     margin:2px 0px;
     border-radius:10px
+}
+
+@media only screen and (max-width: 820px){
+    .chat-body{
+       height:65%;
+    }
 }
