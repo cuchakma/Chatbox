@@ -8,12 +8,13 @@ document.addEventListener('DOMContentLoaded', function(e){
 });
 textbox.addEventListener('keypress', function(e){
     if(e.key === 'Enter') {
-        textContent = document.getElementsByClassName('chat-box-content')[0];
-        msg         = document.getElementById('text-box').value;
-        textbox.value = '';
-        completeMsg = "<p>"+userName+" : "+msg+"</p>";
+        textContentScroll = document.getElementsByClassName('chat-box-content')[0];
+        textContent       = document.getElementsByClassName('conversation-group')[0];
+        msg               = document.getElementById('text-box').value;
+        textbox.value     = '';
+        completeMsg       = "<div class='message message-box'><p>"+userName+" : "+msg+"</p></div>";
         textContent.innerHTML += completeMsg;
-        textContent.scrollTop = textContent.scrollHeight;
+        textContentScroll.scrollTop = textContentScroll.scrollHeight;
         return false;
     }
 });

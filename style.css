@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 .chat-box-header{
-    background-color: #19ca9e;
+    background: linear-gradient(135deg, rgb(42, 39, 218) 0%, rgb(0, 204, 255) 100%);
     width: 100%;
     height: 100px;
 }
@@ -26,4 +26,29 @@
 }
 #text-box{
     width:100%;
+    border:0px;
+    font-size:17px;
+    resize:none;
+    line-height:24px;
+    overflow-x:hidden;
+}
+#text-box:focus{
+    border:0px;
+    outline:0px
+}
+.input-group{
+    padding-right:4px
+}
+.conversation-group{
+    padding-left:30px;
+    padding-right:30px
+}
+.message-box{
+    background:rgb(240, 242, 247);
+    color: rgb(6, 19, 43);
+}
+.message{
+    padding:10px 10px;
+    margin:2px 0px;
+    border-radius:10px
 }
