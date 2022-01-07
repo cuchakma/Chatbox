@@ -11,7 +11,7 @@ textbox.addEventListener('keypress', function(e){
         textContentScroll = document.getElementsByClassName('chat-box-content')[0];
         textContent       = document.getElementsByClassName('conversation-group')[0];
         msg               = document.getElementById('text-box').value;
-        textbox.value     = '';
+        textbox.value     = "";
         completeMsg       = "<div class='message message-box'><p>"+userName+" : "+msg+"</p></div>";
         textContent.innerHTML += completeMsg;
         textContentScroll.scrollTop = textContentScroll.scrollHeight;

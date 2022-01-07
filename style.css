@@ -34,17 +34,20 @@
     resize:none;
     line-height:24px;
     overflow-x:hidden;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 #text-box:focus{
     border:0px;
     outline:0px
 }
 .input-group{
-    padding-right:4px
+    padding-right:4px;
 }
 .conversation-group{
-    padding-left:30px;
-    padding-right:30px
+    padding-left:2em;
+    padding-right:2em;
+    padding-top: 1em;
 }
 .message-box{
     background:rgb(240, 242, 247);
