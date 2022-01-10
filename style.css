@@ -7,13 +7,14 @@ input, textarea, select, button{
 .chat-body{
     display: flex;
     height: calc(100vh - 68px);
+    min-height: 300px;
     box-shadow: 0px 22px 30px 0px rgb(28 26 58 / 20%);
     border-radius: 10px;
     position: fixed;
     right:30px;
+    bottom: 30px;
     flex-direction: column;
     width:372px;
-    justify-content: space-between;
 }
 .chat-box-header{
     background: linear-gradient(135deg, rgb(42, 39, 218) 0%, rgb(0, 204, 255) 100%);
@@ -25,7 +26,7 @@ input, textarea, select, button{
 }
 .chat-box-content{
     background-color: #fff;
-    height: 600px;
+    flex: 1;
     width: 100%;
     overflow: scroll auto;
 }
