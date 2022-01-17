@@ -53,7 +53,19 @@ input, textarea, select, button{
     outline:0px
 }
 .input-group{
+    display: flex;
     padding:10px 28px 6px;
+}
+#submit-btn {
+    color: white;
+    flex-basis: auto;
+    background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
+    box-shadow: rgb(0 77 255 / 50%) 0px 4px 24px;
+    border-radius:28px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    cursor: pointer;
 }
 .conversation-group{
     padding-left:2em;

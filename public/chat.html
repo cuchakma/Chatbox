@@ -11,20 +11,23 @@
     <div class="title">
         <p>Public Chat Box</p>
     </div>
-    <div class="chat-body">
-        <div class="chat-box-header"></div>
-        <div class="chat-box-content">
-            <div class="conversation-group">
-    
+    <form id="chat-form">
+        <div class="chat-body">
+            <div class="chat-box-header"></div>
+            <div class="chat-box-content">
+                <div class="conversation-group">
+                </div>
+            </div>
+            <div class="input-group">
+                <hr>
+                <textarea id="text-box" rows="1" cols="33" placeholder="Enter your message..."></textarea>
+                <button id="submit-btn">Send</button>
+            </div>
+            <div class="chat-box-footer">
             </div>
         </div>
-        <div class="input-group">
-            <hr>
-            <textarea id="text-box" rows="1" cols="33" placeholder="Enter your message..."></textarea>
-        </div>
-        <div class="chat-box-footer">
-        </div>
-    </div>
+    </form>
 </body>
+<script src="../socket.io/socket.io.js"></script>
 <script src="main.js"></script>
 </html>
