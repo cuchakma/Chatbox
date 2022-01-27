@@ -1,8 +1,9 @@
-:root{
-    --recived-message-background:lightblue;
-    --send-message-background:rgb(147, 147, 229);
+*{
+    font-family: sans-serif;
 }
-
+:root{
+    --body-background:rgb(253, 251, 251);
+}
 input, textarea, select, button{
     font-family: Mulish, sans-serif;
     letter-spacing: -0.24px;
@@ -13,7 +14,7 @@ input, textarea, select, button{
     display: flex;
     height: calc(100vh - 68px);
     min-height: 300px;
-    box-shadow: 0px 22px 30px 0px rgb(28 26 58 / 20%);
+    box-shadow: 0px 22px 30px 0px rgba(89, 82, 182, 0.2);
     border-radius: 10px;
     position: fixed;
     right:30px;
@@ -22,7 +23,7 @@ input, textarea, select, button{
     width:372px;
 }
 .chat-box-header{
-    background: linear-gradient(135deg, rgb(42, 39, 218) 0%, rgb(0, 204, 255) 100%);
+    background: linear-gradient(135deg, rgb(42, 39, 218) 0%, rgb(0, 162, 255) 100%);
     width: 100%;
     height: 100px;
     flex: 0 0 auto;
@@ -30,13 +31,12 @@ input, textarea, select, button{
     border-top-right-radius: 10px;
 }
 .chat-box-content{
-    background-color: #fff;
     flex: 1;
     width: 100%;
-    overflow: scroll auto;
+    overflow: auto;
 }
 .chat-box-footer{
-    background-color: #19ca9e;
+    background-color: var(--body-background);
     width: 100%;
     height: 73px;
     border-bottom-right-radius: 10px;
@@ -45,14 +45,16 @@ input, textarea, select, button{
 }
 #text-box{
     border:0px;
-    font-size:17px;
+    margin-top: 3px;
+    font-size:16px;
     resize:none;
     line-height:24px;
     overflow:hidden;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    padding-top: 10px;
-    background-color: blueviolet;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding-top: 8px;
+    padding-left: 7px;
+    margin-left: -10px;
 }
 #text-box:focus{
     border:0px;
@@ -67,66 +69,115 @@ input, textarea, select, button{
     padding-top: 1em;
 }
 .message-box{
+    background:rgb(231, 233, 238);
     color: rgb(6, 19, 43);
 }
 .message{
-    padding:5px 5px;
-    margin-bottom:10px ;
-    width: 90%;
+    padding:1px 10px;
+    margin-bottom:4px;
+    border-radius:15px;
     overflow-wrap: break-word;
+    width: max-content;
+    max-width: 90%;
+    font-size: 16px;
 }
 hr{
     margin: 0px;
     border-width: 0px 0px 1px;
     border-bottom-style: solid;
-    border-bottom-color: rgb(219, 223, 230);
-}
-.recived{
-    background:var(--recived-message-background);
-    margin-right: 10%;
-    border-radius:0px 8px 8px 8px;
-}
-.recived::before{
-    content: '';
-    background-color: var(--recived-message-background);
-    position: absolute;
-    left: 3px;
-    margin-top: -5px;
-    width: 15px;
-    height: 15px;
-    /* bottom: 70%; */
-    /* right: 100px; */
-    /* top: 150px; */
-    border:2px solid var(--recived-message-background);
-    border-radius: 10% 500% 100% 10%;
-    transform: rotate(180deg);
+    border-bottom-color: rgb(163, 169, 179);
 }
 .send{
-    background:var(--send-message-background);
-    margin-left: 8%;
-    border-radius:8px 0px 8px 8px;
-
+    background: linear-gradient(135deg, rgb(42, 39, 218) 0%, rgb(33, 172, 207) 100%);
+    margin-left: auto;
+    color: white;
+    padding-right: 11px;
+    border-radius:15px;
+    width: max-content;
+    max-width: 90%;
 }
-/* .send::after{
-    content: '';
-    background-color: var(--recived-message-background);
-    /* position: relative; */
-    width: 15px;
-    height: 15px;
-    /* bottom: 70%; */
-    /* right: 100px; */
-    /* top: 150px; */
-    border:2px solid var(--recived-message-background);
-    /* border-radius: 10% 500% 100% 10%; */
-    /* transform: rotate(180deg); */
-} */
-.message-auther{
-    padding: .1em;
-    border: 1px black;
-    border-radius: 5px;
-    margin: 3px 3px 0px 0px;
-    text-transform: capitalize;
-    font-family: 'Gill Sans';
-    font-style: normal;
-    font-weight: bold;
+.recived{
+    margin-right: auto;
+    padding-right: 11px;
+    border-radius:15px;
+    width: max-content;
+    max-width: 90%;
+}
+.file-and-smile-icons{
+    width: 6%;
+    fill: rgb(112, 102, 102);
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+}
+.submit-button {
+    width: 9%;
+    fill: white;
+    background: rgb(42, 39, 218);
+    border: none;
+    padding: 6px 8px;
+    box-shadow: 1px 1px 6px blue;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+    margin-top: -23px;
+    margin-right: 12px;
+}
+.poweredby{
+    color: darkgray;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: -10px;
+    font-size: 18px;
+}
+.poweredby b{
+    color: rgba(22, 22, 20, 0.486);
+    font-size: 18px;
+    font-weight: bolder;
+}
+.employee{
+    width: 60px;
+    height: 60px;
+    fill: #c7d4c2;
+    padding-top: 15px;
+    padding-left: 25px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+}
+.employee-name{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 0px;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: -80px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: inherit;
+    font-family: sans-serif;
+}
+.top-right-menu-icons{
+    height: 100px;
+    margin-top: -25px;
+    width: 25px;
+    fill: white;
+    float: right;
+    margin-right: 60px;
+    cursor: pointer;
+}
+.top-right-menu-last-icons{
+    fill: white !important;
+    height: 100px;
+    margin-top: -25px;
+    width: 25px;
+    float: right;
+    margin-right: -55px;
+    cursor: pointer;
+}
+.top-right-menu-icons  svg{
+    fill: whitesmoke;
 }
