@@ -1,9 +1,16 @@
-Project Name :- Chatting System
-Description :- This project is under construction. It is a chatting system
-Tools Used :- Node JS, Express Js, Vanilla JS, HTML, CSS
-Author :- Cupid Chakma, Satyajit Talukdar
+# Project Name :- Chatting System
+ This project is under construction. It is a chatting system
+## Tools Used 
+1. Node JS,
+2. Express Js,
+3. Vanilla JS,
+4. HTML,
+5. CSS
 
-Steps To Install The Project :- 
+## Author 
+-- Cupid Chakma, Satyajit Talukdar --
+
+## Steps To Install The Project :- 
 1. git clone https://github.com/cuchakma/Chatbox.git
 2. Run 'npm-install'
 3. This project is hosted on port number 3000. To change the port number for hosting this project please change the port number from line no :- 47
