@@ -21,3 +21,21 @@ textbox.addEventListener('keypress', function(e){
         return false;
     }
 });
+
+
+// handle animations
+let submit_buttom = document.querySelector('.chat-button');
+let exit = document.querySelector('#close-chat');   
+let livechat = document.querySelector('.chat-body');
+submit_buttom.addEventListener('click',function(){
+    livechat.classList.add('animate-Chat');
+    livechat.classList.remove('close-chat');
+    submit_buttom.style.visibility= 'hidden';
+});
+
+exit.addEventListener('click',function(){
+    livechat.classList.remove('animate-Chat');
+    livechat.classList.add('close-chat');
+    submit_buttom.style.visibility= 'visible';
+
+});
