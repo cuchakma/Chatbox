@@ -28,7 +28,7 @@ input, textarea, select, button{
     background-color: #fff;
     flex: 1;
     width: 100%;
-    overflow: scroll auto;
+    overflow: auto;
 }
 .chat-box-footer{
     background-color: #19ca9e;
