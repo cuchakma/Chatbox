@@ -49,3 +49,13 @@ const PORT = 3000 || process.env.PORT;
 server.listen(PORT, () => {
     console.log(`Server Running On Port ${PORT}`);
 });
+
+console.log("Something new");
+
+const some =(first) => { 
+    array=[a,b,c];
+    for (let i = 0; i < array.length; i++) {
+        const element = array[i];
+        
+    }
+ }
