@@ -1,26 +1,31 @@
 {
-  "name": "chat-engine",
+  "name": "chat-server",
   "version": "1.0.0",
-  "description": "This is a chat engine",
-  "main": "server.js",
+  "description": "This is a chat api that uses socket.io library for doing real time bidirectional communication",
+  "main": "index.js",
   "scripts": {
-    "test": "node server",
-    "dev": "nodemon server"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cuchakma/Chatbox.git"
   },
-  "author": "Cupid Chakma, Satyajit Talukdar",
+  "keywords": [],
+  "author": "Satyajit Talukder, Cupid Chakma",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/cuchakma/Chatbox/issues"
   },
   "homepage": "https://github.com/cuchakma/Chatbox#readme",
   "dependencies": {
+    "@withvoid/make-validation": "^1.0.5",
+    "cors": "^2.8.5",
     "express": "^4.17.2",
-    "moment": "^2.29.1",
-    "socket.io": "^4.4.1"
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.1",
+    "morgan": "^1.10.0",
+    "socket.io": "^4.4.1",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
