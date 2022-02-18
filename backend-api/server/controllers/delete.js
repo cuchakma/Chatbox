@@ -1,4 +1,5 @@
+
 export default {
-  deleRoomById: async (req, res) => {},
+  deleteRoomById: async (req, res) => {},
   deleteMessageById: async (req, res) => {},
-};
+}
