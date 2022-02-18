@@ -9,7 +9,7 @@ chat data storage system.
 ## Authors
 
 - [Cupid Chakma](https://github.com/cuchakma)
-- [Satyajit Talukder](https://github.com/gooyeduck)
+- [Satyajit Talukder ](https://github.com/gooyeduck)
 
 
 ## Installation
