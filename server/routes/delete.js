@@ -3,7 +3,7 @@ import express from 'express';
 /**
  * Controller for deleting the Room and the Message
  */
-import deleteController from '../controllers/delete';
+import deleteController from '../../controllers/delete';
 
 const router = express.Router();
 

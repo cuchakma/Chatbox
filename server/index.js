@@ -5,7 +5,7 @@ import cors from 'cors';
 
 // routes
 // import indexRouter from "./routes/index.js";
-// import userRouter from "./routes/user.js";
+ import userRouter from "./routes/user";
 // import chatRoomRouter from "./routes/chatRoom.js";
 // import deleteRouter from "./routes/delete.js";
 
